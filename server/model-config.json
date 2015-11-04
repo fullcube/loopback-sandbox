@@ -31,5 +31,13 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Subscription": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Membership": {
+    "dataSource": "db",
+    "public": true
   }
 }

@@ -3,6 +3,8 @@ var boot = require('loopback-boot');
 
 var app = module.exports = loopback();
 
+global.Promise = require('bluebird');
+
 app.start = function() {
   // start the web server
   return app.listen(function() {

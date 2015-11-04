@@ -1,0 +1,36 @@
+{
+  "name": "Subscription",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "String",
+      "id": true,
+      "defaultFn": "uuid"
+    },
+    "provider": {
+      "type": "string",
+      "required": true
+    },
+    "membershipId": {
+      "type": "String",
+      "required": true
+    },
+    "state": {
+      "type": "String"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "membership": {
+      "type": "belongsTo",
+      "model": "Membership",
+      "foreignKey": "membershipId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

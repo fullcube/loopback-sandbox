@@ -15,7 +15,11 @@
     "serve-favicon": "^2.0.1"
   },
   "devDependencies": {
-    "jshint": "^2.5.6"
+    "bluebird": "^3.0.5",
+    "chai": "^3.4.0",
+    "jshint": "^2.5.6",
+    "loopback-testing": "^1.2.0",
+    "mocha": "^2.3.3"
   },
   "repository": {
     "type": "",
