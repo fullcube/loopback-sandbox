@@ -31,5 +31,13 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Program": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Person": {
+    "dataSource": "db",
+    "public": true
   }
 }

@@ -1,0 +1,33 @@
+{
+  "name": "Person",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "String",
+      "id": true,
+      "defaultFn": "uuidv4"
+    },
+    "programId": {
+      "type": "String",
+      "required": true
+    },
+    "created": {
+      "type": "Date",
+      "defaultFn": "now"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "program": {
+      "type": "belongsTo",
+      "model": "Program",
+      "foreignKey": "programId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}
